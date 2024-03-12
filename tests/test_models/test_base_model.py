@@ -10,5 +10,9 @@ class TestBaseModel(unittest.TestCase):
         model.save()
         self.assertNotEqual(initial_updated_at, model.updated_at)
 
+    def test_str(self):
+        model = BaseModel()
+        self.assertTrue(model.__str__)
+
 if __name__ == "__main__":
     unittest.main()

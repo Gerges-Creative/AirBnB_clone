@@ -22,5 +22,9 @@ class TestBaseModel(unittest.TestCase):
         self.assertIsInstance(model1_dict["created_at"], str)
         self.assertIsInstance(model1_dict["updated_at"], str)
 
+    def test_str(self):
+        model_str = self.model.__str__()
+        self.assertIsNot(model_str, "Fake")
+
 if __name__ == "__main__":
     unittest.main()

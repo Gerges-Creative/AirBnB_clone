@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+Unittest for BaseModel Class
+"""
 from models.base_model import BaseModel
 import unittest
 
